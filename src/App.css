@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+.buttongroup {
+}
+
+.dropDownGroup {
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-float infinite 3s ease-in-out;
@@ -37,3 +44,437 @@
     transform: translateY(0px);
   }
 }
+
+.mt-0 {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-dark {
+  background-color: gray;
+  /* background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a); */
+  /* margin-bottom: 2rem; */
+  min-height: 4rem;
+}
+
+.footer {
+  background-color: rgb(209, 209, 209);
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+} 
+
+.footer-item {
+  border-right: 1px solid;
+}
+
+.footer-middle {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+
+}
+
+
+
+/* @media screen and (min-width: 601px) { */
+  .footer2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* } */
+
+.bottom-border { 
+  border-bottom: 1px solid;
+}
+
+.donate-button {
+  color:rgb(248, 139, 89);
+}
+
+.vertical-middle {
+  /* display: flex; */
+  margin-top: 4rem;
+  text-align: center;
+  
+}
+
+.vertical-left {
+  /* display: flex; */
+  margin-top: 4rem;
+  text-align: left;
+  
+}
+
+.catAvatar {
+  padding: 0px;
+}
+
+.catProfile {
+  padding: 2.5rem;
+}
+
+.catLocation {
+  background-color: rgb(143, 255, 255);
+}
+
+.catAge {
+  background-color: rgb(240, 244, 180);
+}
+
+.catSpecial {
+  background-color: rgb(255, 187, 156);
+}
+
+.h3-inline {
+  display: inline;
+}
+
+.col-no-left {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.div-container {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-child {
+  flex: 30%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* For Swiper*/
+ .mySwiper, .mySwiper2 {
+  width: 432px;
+  height: 302px;
+  padding: 0px;
+} 
+
+.vSwiper {
+  width: 288px;
+  height: 384px;
+  padding-left: 0px;
+  border: solid 2px;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff; 
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}  
+
+.swiper-slide img {
+  display: block; 
+  /* margin-top: 5rem; */
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}  
+
+.border-on {
+  border: solid 2px;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin: 1px;
+}
+
+.mySwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.ModalFooter {
+  justify-content: center;
+}
+
+.modal-90w {
+  min-width: 60%;
+}
+
+.modal-image {
+  float: left;
+  padding-right: 20px;
+}
+
+.modal-content {
+  min-height: 60vh;
+}
+
+.external-btn {
+  margin-bottom: 5%;
+}
+
+.offcanvas-border {
+  border-radius: 30px;
+  height: 50%;
+}
+
+.offcanvas-border-bottom {
+  border-radius: 30px;
+  height: 80vh;
+}
+
+.container-radious-border {
+  border-radius: 10px;
+}
+
+.home-banner {
+  /* display: flex;
+  align-items: top;
+  justify-content: left; */
+  display: grid;
+  grid-template-columns: 30%;
+  height: 251px;
+  background-image: 
+  url('../public/images/home/banner2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: start;
+  justify-items: center;
+}
+
+.home-banner-content {
+  text-align: left;
+}
+
+.home-fsize-20 {
+  color: black;
+  font-size: 20px;
+}
+
+.home-fsize-35 {
+  color: black;
+  font-size: 35px;
+}
+
+.home-fsize-45 {
+  color: black;
+  font-size: 45px;
+}
+
+.home-h3-ml3 {
+  margin-left: 1rem;
+}
+
+.home-h3-ml4 {
+  margin-left: 1.5rem;
+}
+
+.home-h3-ml5 {
+  margin-left: 3rem;
+}
+
+.cat-banner-border {
+  border: solid 0px;
+  border-radius: 10px;
+  height: 251px;
+  background-color: rgb(238, 237, 237);
+}
+
+.beginner-banner-border {
+  border: solid 0px;
+  border-radius: 10px;
+  height: 251px;
+  background-color: rgb(246, 251, 206);
+}
+
+
+.beginner-guide-container {
+  padding: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .buttongroup {
+    padding-left: 20%;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  .home-banner {
+    background-image: none;
+    grid-template-columns: 100%;
+  }
+  .home-banner-content {
+    text-align: center;
+  }
+  .home-h2 {
+    font-size: 25px;
+  }
+  .home-h3-ml3 {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  .home-h3-ml4 {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .home-h3-ml5 {
+    font-size: 35px;
+    margin-left: 0px;
+  }
+}
+
+.home-navigator {
+  border: solid 1px;
+  border-radius: 10px;
+  color: lightgray;
+}
+
+.nav-title1 {
+  display: inline;
+  position: relative;
+  right: 10px;
+  top: -30px;
+  background-color: white;
+}
+
+.nav-text {
+  font-size: 20px;
+}
+
+
+.beginner-banner-border {
+  border: solid 0px;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav-text {
+      width: 80%;
+      margin: auto;
+      text-align: left;
+  }
+  .home-fsize-20 {
+    font-size: 18px
+  }
+  
+}
+
+/* @media screen and (min-width: 1000px) {
+  .catsPageContainer {
+    width: 1000px
+  }
+  .cat-banner-border {
+    width: 1000px
+  }
+} */
+
+@media screen and (min-width: 601px) {
+  .nav-text {
+      width: 70%;
+      margin: auto;
+      text-align: center;
+
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) { 
+  .aboutme-div {
+      width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+  .aboutme-div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+  .beginner-div {
+    width: 100%
+  }
+}
+
+@media screen and (min-width: 692px) { 
+  .beginner-div {
+    width: 80%
+  }
+}
+
+@media screen and (min-width: 865px) { 
+  .beginner-div {
+    width: 60%
+  }
+}
+
+@media screen and (min-width: 1154px) { 
+  .beginner-div {
+    width: 45%
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .beginner-image {
+    width: 90%;
+    height: auto;
+  }
+  .beginner-guide-button {
+    padding: 0px !important;
+    width: 90%;
+    height: auto;
+  }
+  .beginner-guide-container {
+    width: 33vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .extlink-xs {
+    display: block
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .extlink-xs {
+    display: none
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .extlink-div {
+    display: none
+  };
+}
+
+@media screen and (min-width: 651px) and (max-width: 1029px) {
+  .extlink-div {
+    width: 30%;
+    display: block
+  };
+}
+
+@media screen and (min-width: 1030px) {
+  .extlink-div {
+    width: 20%;
+  };
+}
+
