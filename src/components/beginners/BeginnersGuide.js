@@ -3,12 +3,16 @@ import { Button } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import { selectPrev, selectNext } from './BeginnerSelectorFunc';
+import { useSelector } from 'react-redux';
+import { selectAllTips } from '../../features/beginners/beginnersSlice';
 
-const BeginnersGuide = (props) => {
-    const beginners = props.beginners;
+const BeginnersGuide = () => {
+    // const beginners = props.beginners;
+
+    const allTips = useSelector(selectAllTips);
 
     const [ showModal, setShowModal ] = useState(false);
-    const [ currentButton, setCurrentButton ] = useState(beginners[0]);
+    const [ currentButton, setCurrentButton ] = useState(allTips[0]);
     const [ modalTitle, setmodalTitle ] = useState('');
     const [ modalImage, setModalImage ] = useState('');
     const [ modalContent, setModalContent ] = useState('');
@@ -35,19 +39,37 @@ const BeginnersGuide = (props) => {
     return (
         <>
         {
-            beginners.map((beginner) => {
+            // beginners.map((beginner) => {
+            //     return(
+            //     <div className='beginner-guide-container'>
+            //         <Button 
+            //             color="link" 
+            //             onClick={ () => {
+            //                 setCurrentButton(beginner);
+            //                 toggleModal();
+            //             }
+            //             }
+            //             className='beginner-guide-button'
+            //         >
+            //             <Image className='beginner-image' alt={beginner.img} src={beginner.iconfolder + beginner.img} style={{border: 'solid .5px'}} rounded/>
+            //         </Button>
+            //     </div>
+            //     )
+            // })
+
+            allTips.map((alltip) => {
                 return(
                 <div className='beginner-guide-container'>
                     <Button 
                         color="link" 
                         onClick={ () => {
-                            setCurrentButton(beginner);
+                            setCurrentButton(alltip);
                             toggleModal();
                         }
                         }
                         className='beginner-guide-button'
                     >
-                        <Image className='beginner-image' alt={beginner.img} src={beginner.iconfolder + beginner.img} style={{border: 'solid .5px'}} rounded/>
+                        <Image className='beginner-image' alt={alltip.img} src={alltip.iconfolder + alltip.img} style={{border: 'solid .5px'}} rounded/>
                     </Button>
                 </div>
                 )

@@ -41,7 +41,7 @@ export const BEGINNERS = [{
     name: 'spaying and neutering',
     iconfolder: 'images/beginner_icons/',
     img: 'spay.jpeg',
-    ss: 'dd',
+    // ss: 'dd',
     description: 
                 <p>Please consider to spay or neuter your cat. This is not only for controlling stray or homeless cat,
                 it also brings your cat a healthier life and eliminating some undesirable behaviour such as roaming and frequent urination. 

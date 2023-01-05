@@ -11,7 +11,6 @@ import Home from './pages/HomePage';
 import { Routes, Route } from 'react-router-dom';
 
 
-
 function App() {
   useEffect(() => {
     document.title = "What the Cats!";

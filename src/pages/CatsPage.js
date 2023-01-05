@@ -36,7 +36,7 @@ const CatsPage = () => {
         </div>
         </div>
         <Container className='mb-5 mt-5 catsPageContainer'>
-            <CatTabs cat={ CATS } />
+            <CatTabs />
         </Container>
         </>
     )

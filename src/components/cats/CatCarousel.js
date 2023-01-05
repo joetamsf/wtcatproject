@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { FreeMode, Navigation, Pagination, Thumbs } from "swiper";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 import 'swiper/css/free-mode';
-import { Row, Col } from 'reactstrap';
-import chibiImg from '../../imgs/chibi_sample3.jpeg';
-import benImg from '../../imgs/ben_sample1.jpeg';
-import chibiThumb from '../../imgs/chibi_sample_resized_thumbnail.jpeg';
-import benThumb from '../../imgs/ben_thumbnail.jpeg';
-import naughtyImg from '../../imgs/naughty_sample.jpeg';
-
-//import { faCommentsDollar } from '@fortawesome/free-solid-svg-icons';
+// import { Row, Col } from 'reactstrap';
 
 
 
@@ -21,8 +14,6 @@ const CatCarousel = (props) => {
     const [ thumbsSwiper, setThumbsSwiper ] = useState(null);
     const { imgFolder, imgs, thumbs } = props.cat;
     
-    console.log(imgFolder);
-
     return (
         <>
             <Swiper

@@ -1,8 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { selectAllLogs } from "../../features/changelogs/changeLogsSlice";
+import { useSelector } from "react-redux";
 
 export const ChangeLog = () => {
+    const changeLogs = useSelector(selectAllLogs);
     return (
         <Container className='mt-3 mb-3'>
             <Row 
@@ -14,7 +17,13 @@ export const ChangeLog = () => {
             >
                 <Col style={{ textAlign: 'left'}}>
                     <h3>Change Log</h3>
-                    <h6>11/07/22 - In Progress to translate BootStrap webpages to React</h6>
+                    {
+                        changeLogs.slice(0).reverse().map((changeLog) => {
+                            return (
+                                <h6>{changeLog.msg}</h6>
+                            )
+                        })
+                    }
                 </Col>
             </Row>
         </Container>

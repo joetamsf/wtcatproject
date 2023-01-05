@@ -2,22 +2,38 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { Col, Row } from 'reactstrap';
 import React, { useState } from 'react';
-import { selectCatById } from './cats/CatSelectorFunc';
+import { useSelector, useDispatch } from 'react-redux';
+import { catsTabSelector, selectCatByName } from '../features/cats/catsSlice';
 import CatCarousel from './cats/CatCarousel';
 import CatProfile from './cats/CatProfile';
+import { selectCheckedAlbum, addlastCheckedAlbum } from '../features/app/appSlice';
 
 
-const CatTabs = (props) => {
-    const [ mainTab, setMainTab ] = useState('Chibi');
-    const cats = props.cat;
-    const selectedCat = selectCatById(mainTab);
-    console.log(cats);
+
+
+const CatTabs = () => {
+    const checkedAlbum = useSelector(selectCheckedAlbum);
+    const [ mainTab, setMainTab ] = useState(checkedAlbum);
+    const cats = useSelector(catsTabSelector);
+    const UseDispatch = useDispatch();
+
+
+    const selectedCat = useSelector(selectCatByName(mainTab));
+
+    const updateMainTab = (key) => {
+       UseDispatch(addlastCheckedAlbum(key));
+       setMainTab(key);
+    }
     
     return (
         <>
         <Row>
 
-        <Tabs activeKey={mainTab} className="mb-5" onSelect={(key) => setMainTab(key)}>
+        <Tabs activeKey={mainTab} className="mb-5" 
+            onSelect={
+                updateMainTab
+            }
+        >
             {
             cats.map(
                 (cat) => {

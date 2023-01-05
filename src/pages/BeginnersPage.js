@@ -40,7 +40,7 @@ const Beginners = () => {
             </div>
             </div>
             <div className='beginner-div d-flex flex-wrap mt-3 mb-3'>
-            <BeginnersGuide beginners={BEGINNERS} />
+            <BeginnersGuide />
             </div>
         </div>
 

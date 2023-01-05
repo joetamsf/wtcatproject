@@ -12,8 +12,8 @@ export const CATS = [{
         name: 'Chibi',
         thumbnail: chibiThumb,
         imgFolder: 'images/chibi/',
-        imgs: ['chibi_sample_v2.jpeg', 'chibi_sample4.jpeg', 'chibi_sample3.jpeg'],
-        thumbs: ['chibi_sample_v2_thumbnail.jpeg', 'chibi_sample4_thumbnail.jpeg', 'chibi_sample3_thumbnail.jpeg'],
+        imgs: ['chibi_sample_v2.jpeg', 'chibi_sample4.jpeg', 'chibi_sample3.jpeg','chibi_sample5.jpeg'],
+        thumbs: ['chibi_sample_v2.jpeg', 'chibi_sample4.jpeg', 'chibi_sample3.jpeg','chibi_sample5.jpeg'],
         description:
             `Chibi was a stray cat, Mr. & Mrs. Suzuki rescued Chibi and healed her wound.Later she has become my little sister and now she is living with my parents. 
             As she lived outdoors for a long time, she scares about rainny day and often hides under sofa even she has lived with us for 8 years.
@@ -42,8 +42,8 @@ export const CATS = [{
         name: 'Heart',
         thumbnail: heartThumb,
         imgFolder: 'images/heart/',
-        imgs: ['heart_sample.jpeg','heart_sample2.jpeg'],
-        thumbs: ['heart_sample_thumbnail.jpeg', 'heart_sample2_thumbnail.jpeg'],
+        imgs: ['heart_sample.jpeg','heart_sample2.jpeg','heart_sample4.jpeg','heart_sample5.jpeg','heart_sample6.jpeg'],
+        thumbs: ['heart_sample.jpeg','heart_sample2.jpeg','heart_sample4.jpeg','heart_sample5.jpeg','heart_sample6.jpeg'],
         description:
             'According to veterinarian, Heart is the elder sister of Naughty and Ben. Unlike Naughty, Heart doesnt stay close to us unless she wants something from us.',
         location: 'United States',
@@ -55,8 +55,8 @@ export const CATS = [{
         name: 'Naughty',
         thumbnail: naughtyThumb,
         imgFolder: 'images/naughty/',
-        imgs: ['naughty_sample6.jpeg'],
-        thumbs: ['naughty_sample6_thumbnail.jpeg'],
+        imgs: ['naughty_sample8.jpeg', 'naughty_sample7.jpeg'],
+        thumbs: ['naughty_sample8.jpeg', 'naughty_sample7.jpeg'],
         description:
             'Naughty is a domestic shorthair cat. She came to our home with her sister: Heart. She follows us everywhere and curious to every new thing we bring to home. We call her as "Security of our home"',
         location: 'United States',
