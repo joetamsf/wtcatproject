@@ -43,12 +43,13 @@ export const BEGINNERS = [{
     img: 'spay.jpeg',
     // ss: 'dd',
     description: 
-                <p>Please consider to spay or neuter your cat. This is not only for controlling stray or homeless cat,
-                it also brings your cat a healthier life and eliminating some undesirable behaviour such as roaming and frequent urination. 
+                `<p>Please consider to spay or neuter your cat. This is not only for controlling stray or homeless cat,
+                it also brings your cat a healthier life and eliminating some undesirable behaviour such as roaming and frequent urination. <br/><br/>
                 This <a href="https://www.foundanimals.org/spay-neuter-affects-pet-personality/" target="_blank" rel="noreferrer">
                     artice
                 </a> discussed some benefits that 
-                spay/neuter bring to us. After spaying or neutering, your cat needs more your attactions and cares, please allocate more time on them</p>,
+                spay/neuter bring to us. 
+                After spaying or neutering, your cat needs more your attactions and cares, please allocate more time on them.</p>`,
 
         
 },
@@ -65,11 +66,15 @@ export const BEGINNERS = [{
 },
 {
     id: 6,
-    name: 'Under Construction',
+    name: 'Dangerous Foods',
     iconfolder: 'images/beginner_icons/',
     img: 'caution.png',
     description: 
-            `Under Construction`
+            `Some human foods can be poisonous to cats, even a very small amount can kill your cat if ingested.
+            The example of dangerous foods are: Onions, Garlic, Coffee, Tea and Chocolate.
+            Please make sure these foods are placed on somewhere your cannot reach. 
+            For Tea or Coffee, a cup lid may be good enough to keep your cat from touching it.
+            `
 },
 {
     id: 7,
