@@ -1,10 +1,6 @@
-// import chibiImg from '../imgs/chibi_sample3.jpeg';
 import chibiThumb from '../imgs/chibi_thumbnail.jpg';
-// import benImg from '../imgs/ben_sample1.jpeg';
 import benThumb from '../imgs/ben_thumbnail.jpeg'
-// import naughtytImg from '../imgs/naughty_sample6.jpeg';
 import naughtyThumb from '../imgs/naughty_thumbnail.jpeg';
-// import heartImg from '../imgs/heart_sample2.jpeg';
 import heartThumb from '../imgs/heart_thumbnail.jpeg'
 
 export const CATS = [{
