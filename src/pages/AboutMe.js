@@ -44,7 +44,7 @@ const AboutMe = () => {
                         <Col>
                             <h3 style={{ textAlign: 'left', paddingTop: '20px' }}>Joe Tam</h3>
                             <p style={{ textAlign: 'left' }}>
-                                Fromer server engineer in Hong Kong. We moved to the United States in 2021.
+                                Former server engineer in Hong Kong. We moved to the United States in 2021.
                                 I am also a cat lover, as the first portfolio project of FullStack developer bootcamp,
                                 I would like use this mini website to share photos of cats around me and some useful information for beginners.
                             </p>

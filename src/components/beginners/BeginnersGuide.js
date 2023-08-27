@@ -8,7 +8,6 @@ import { selectPrev, selectNext } from './BeginnerSelectorFunc';
 import { useSelector } from 'react-redux';
 import { selectAllTips } from '../../features/beginners/beginnersSlice';
 import parse from 'html-react-parser';
-// import { show } from 'dom7';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
