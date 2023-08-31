@@ -98,7 +98,7 @@ const Footer = () => {
                     backgroundColor: 'gray',
                     paddingBottom: '2px' 
         }}>
-            2022 jtsfprojects
+            2023 shinjtprojs
         </div>
 
     </>
