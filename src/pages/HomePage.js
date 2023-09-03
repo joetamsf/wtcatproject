@@ -16,10 +16,14 @@ const HomePage = () => {
                 <p className='nav-title1 home-fsize-35'>
                     What the Cat! project
                 </p>
-                <div className='nav-text mb-5'>
-                    What the Cat! is a mini-website for sharing photos of cat in my family.
+                <div className='nav-text mb-2'>
+                    What the Cat! is a mini-project for sharing photos of cat in my family.
                     Here you can find tips from my experience to beginners who want to get a cat. 
-                    Cat has changed our lives so many, hopefully you like the photos and tip in this website.
+                    Cat has changed our lives so many, hopefully you like everything in this website.
+                </div>
+                <div className='nav-text mb-5'>
+                    What the Cat! is also an ongoing development project, updates will be kept making on code and contents.
+                    Source code of this project is available at my GitHub, please feel free to download it.
                 </div>
                 <HomeCards homecards={HOMECARD} />
             </div>
