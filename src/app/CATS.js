@@ -16,8 +16,8 @@ export const CATS = [{
             In Japanese, "Chibi" means little kid.`,
         location: 'Hong Kong',
         age: '10',
-        special: 'Tail looks like a rabbit-tail'
-
+        special: 'Tail looks like a rabbit-tail',
+        like: -1
     },
     {
         id: 1,
@@ -30,8 +30,8 @@ export const CATS = [{
             'Ben looks very like Heart, He was rescued by a cat-volunteer together with Naughty and Heart. Now Ben is living with that cat-volunteer. Previously he stayed at our home for a vacation with Heart and Naughty',
         location: 'United States',
         age: 1,
-        special: 'N/A'
-
+        special: 'N/A',
+        like: -1
     },
     {
         id: 2,
@@ -44,7 +44,8 @@ export const CATS = [{
             'According to veterinarian, Heart is the elder sister of Naughty and Ben. Unlike Naughty, Heart doesnt stay close to us unless she wants something from us.',
         location: 'United States',
         age: 1,    
-        special: 'She likes playing ball'
+        special: 'She likes playing ball',
+        like: -1
     },
     {
         id: 3,
@@ -57,7 +58,7 @@ export const CATS = [{
             'Naughty is a domestic shorthair cat. She came to our home with her sister: Heart. She follows us everywhere and curious to every new thing we bring to home. We call her as "Security of our home"',
         location: 'United States',
         age: 1,    
-        special: 'She likes being around us'
-    
+        special: 'She likes being around us',
+        like: -1
     }
 ];

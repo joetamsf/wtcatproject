@@ -11,7 +11,13 @@ import 'bootstrap-social/bootstrap-social.css';
 //import 'font-awesome/css/font-awesome.css';
 import 'typeface-lobster';
 import 'typeface-open-sans';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
+
+const client = new ApolloClient({
+  uri: 'http://localhost:5000',
+  cache: new InMemoryCache(),
+});
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -20,7 +26,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
         <BrowserRouter>
+          <ApolloProvider client={client}>
             <App />
+          </ApolloProvider>
         </BrowserRouter>
     </Provider>
   </React.StrictMode>

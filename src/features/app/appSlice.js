@@ -4,6 +4,11 @@ const initialState =
     {
         lastCheckedAlbum: 'Chibi'
     }
+{/*
+    Below code is used to record the last selected tab 
+    in /cats, so if a visitor goes to other page after 
+    an arbitrary tab is selected,it will show their choice when he/she returns
+*/}
 
 const appSlice = createSlice({
     name: 'app',

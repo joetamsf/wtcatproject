@@ -28,4 +28,7 @@ yarn-error.log*
 /src/reportWebVitals.js
 /src/setupTests.js
 
+# Skip testing file
+/src/components/testing/*.js
+
 .gitignore

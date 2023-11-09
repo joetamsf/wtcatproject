@@ -12,7 +12,7 @@ const HomeCards = (props) => {
                 {
                     homecards.map(homecard => {
                         return (
-                        <Col xs="12" sm="4" className="mb-2" >
+                        <Col xs="12" sm="4" className="mb-2" key={homecard.id}>
                             <Card className='text-start' style={{color: 'black'}}>
                                 <Card.Header>{homecard.cardtitle}</Card.Header>
                                 <Card.Body>
