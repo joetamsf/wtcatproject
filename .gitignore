@@ -32,3 +32,4 @@ yarn-error.log*
 /src/components/testing/*.js
 
 .gitignore
+package.json
