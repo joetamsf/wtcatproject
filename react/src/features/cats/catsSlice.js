@@ -1,6 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { CATS } from "../../app/CATS";
 import axios from "axios";
+/* 
+    Use below code for using apollo server with MongoDB
+
 import sign from "jwt-encode";
 
 const url = process.env.REACT_APP_GQLURL;
@@ -32,6 +35,49 @@ export const fetchLikes = createAsyncThunk(
 
     }
     
+)
+*/
+
+/*
+    Use below code for using graphql with AWS Appsync
+*/
+
+const API_URL = process.env.REACT_APP_API_URL;
+const API_KEY = process.env.REACT_APP_API_KEY;
+
+export const fetchLikes = createAsyncThunk(
+    'cats/fetchLikes',
+    async () => {
+        const res = await axios.post(
+            API_URL, {
+                query: `
+                    query MyQuery {
+                        listLikescounts {
+                            items {
+                            _id
+                            likes
+                            name
+                            }
+                        }
+                    }
+                
+                `
+            },
+            {
+                headers: {
+                    'x-api-key': API_KEY
+                }
+            }
+        );
+
+        const data = {
+            allLikes: res.data.data.listLikescounts.items
+        };
+        // const data2 = {};
+        // data2.allLikes = res.data.data.listLikescounts.items;
+        // console.log(data2);
+        return data;
+    }
 )
 
 const initialState = {
