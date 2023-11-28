@@ -9,7 +9,7 @@ Even though the backend code is provided, since this project is deployed into AW
 This guide will cover deployment on both local machine and AWS. 
 
 ## Prerequisites
----
+
 1. Linux/Unix based environment (e.g MacOS)
 2. npm package version: ≥ 8.1.2
 3. git package installed
