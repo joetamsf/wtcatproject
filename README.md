@@ -1,5 +1,5 @@
 ## What the Cats! Project
----
+
 This is of repository of What the Cat! Project: https://wtc.shinjtprojs.dev/. The repository contains code for frontend and backend.
 
 The frontend is written in React.js and can be found in react folder, whereas the apollo folder contains backend code of Apollo server that accepting GraphQL query and connecting MongoDB Atlas for data store. 
@@ -22,4 +22,3 @@ This guide will cover deployment on both local machine and AWS.
 6. GitHub repository (for AWS Amplify)
 
 ## Get Started: Clone the repository
----
