@@ -1,0 +1,5 @@
+_id,likes,name,cname
+ObjectId(6504adc0a8a9434b7da4f809),5,Ben,bb
+ObjectId(6504adbba8a9434b7da4f808),20,Heart,ss
+ObjectId(6504ad9ca8a9434b7da4f807),75,Chibi,cb
+ObjectId(6504adc7a8a9434b7da4f80a),25,Naughty,yy

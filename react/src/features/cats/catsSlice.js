@@ -1,9 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { CATS } from "../../app/CATS";
 import axios from "axios";
-/* 
-    Use below code for using apollo server with MongoDB
 
+// Use below code for using apollo server with MongoDB
+
+/*
 import sign from "jwt-encode";
 
 const url = process.env.REACT_APP_GQLURL;
@@ -32,9 +33,7 @@ export const fetchLikes = createAsyncThunk(
         );
         const data = res.data.data;
         return data;
-
-    }
-    
+    }  
 )
 */
 
@@ -73,9 +72,6 @@ export const fetchLikes = createAsyncThunk(
         const data = {
             allLikes: res.data.data.listLikescounts.items
         };
-        // const data2 = {};
-        // data2.allLikes = res.data.data.listLikescounts.items;
-        // console.log(data2);
         return data;
     }
 )

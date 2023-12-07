@@ -1,0 +1,4 @@
+{"_id":{"$oid":"6504ad9ca8a9434b7da4f807"},"name":"Chibi","likes":75.0, "cname":"cb"}
+{"_id":{"$oid":"6504adbba8a9434b7da4f808"},"name":"Heart","likes":20.0,"cname":"ss"}
+{"_id":{"$oid":"6504adc0a8a9434b7da4f809"},"name":"Ben","likes":5.0,"cname":"bb"}
+{"_id":{"$oid":"6504adc7a8a9434b7da4f80a"},"name":"Naughty","likes":25.0,"cname":"yy"}
