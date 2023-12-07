@@ -145,7 +145,7 @@ $ node index.js
 ### React
 
 ```
-$ react/src
+$ cd react/src
 $ npm start
 ```
 
