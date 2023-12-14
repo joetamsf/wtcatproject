@@ -6,6 +6,13 @@ import Image from 'react-bootstrap/Image';
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
+{/*
+    ExtLinksSide component is intended to be displayed when the width
+    is bigger than 650px, which is for desktop browser.
+
+    ExtLinksBottom component will be displayed when the width is <= 650px,
+    which is targeted on mobile devices
+*/}
 
 export const ExtLinksSide = (props) => {
     const extlinks = props.extlinks;

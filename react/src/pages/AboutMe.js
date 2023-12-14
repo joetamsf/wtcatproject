@@ -44,25 +44,26 @@ const AboutMe = () => {
                         <Col>
                             <h3 style={{ textAlign: 'left', paddingTop: '20px' }}>Joe Tam</h3>
                             <p style={{ textAlign: 'left' }}>
-                                Former server engineer in Hong Kong. We moved to the United States in 2021.
-                                I am also a cat lover, as the first portfolio project of FullStack developer bootcamp,
-                                I would like use this mini website to share photos of cats around me and some useful information for beginners.
+                                Before moving to the United States, I worked in IT support and server administration field in Hong Kong for 10 years.
+                                Now I work as a Sales Associate for a living, I spent nearly year on taking bootcamp course for learning web programming.
+                                By using the knowledge I learned from the bootcamp, 
+                                I create this portfolio project with React for sharing photos of cats around me and some useful information for beginners.
                             </p>
                         </Col>
                     </Row>
                     <Row style={{backgroundColor: 'aqua'}} className='mt-3 container-radious-border'>
                         <Col style={{ textAlign: 'left' }}>
                             <h3 style={{ paddingTop: '20px' }}>My Works</h3>
+                            <p style={{ textAlign: 'left' }}>
+                            <pre>{ `Belows are the GitHub links of my works in the bootcamp. \nTo obtain the latest sourcecode of this website,\nplease refer to the "React + Apollo version" of What the Cat! project. `}
+                            </pre>
+                        </p>
+
                             <h6>Python</h6>
-                            <p>1. Django restaurant backend</p>
+                            <p>Django backend</p>
                             <p>
                                 <a href="https://github.com/joetamsf/honproject" rel="noreferrer" target="_blank">
                                     <FontAwesomeIcon icon={faGithub} /> Source Code
-                                </a>
-                            </p>
-                            <p>
-                                <a href="http://proj3.jtsfprojects.com/" rel="noreferrer" target="_blank">
-                                    <FontAwesomeIcon icon={faLink} /> URL
                                 </a>
                             </p>
                             <p>
@@ -70,13 +71,20 @@ const AboutMe = () => {
                                     <FontAwesomeIcon icon={faYoutube} /> YouTube
                                 </a>
                             </p>
-                            <h6>BootStrap</h6>
-                            <p>Whats the Cat</p>
+                            <h6>What the Cat! project</h6>
+                            <p>1. Bootstrap version</p>
                             <p>
                                 <a href="https://github.com/joetamsf/bootstrap_project" rel="noreferrer" target="_blank">
                                     <FontAwesomeIcon icon={faGithub} /> Source Code
                                 </a>
                             </p>
+                            <p>2. React + Apollo version</p>
+                            <p>
+                                <a href="https://github.com/joetamsf/wtcatproject" rel="noreferrer" target="_blank">
+                                    <FontAwesomeIcon icon={faGithub} /> Source Code
+                                </a>
+                            </p>
+
                         </Col>
                     </Row>
                     </Container>
