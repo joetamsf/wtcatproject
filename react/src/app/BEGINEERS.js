@@ -78,11 +78,16 @@ export const BEGINNERS = [{
 },
 {
     id: 7,
-    name: 'Under Construction',
+    name: 'Adjust your sleep schedule',
     iconfolder: 'images/beginner_icons/',
-    img: 'caution.png',
+    img: 'rest_time.jpg',
     description: 
-            `Under Construction`
+            `Cats are crepuscular animal, meaning that their active time is different than us. <br/>
+            It is not suprised that you might be waken up at the midnight around 5 or 6am. <br/>
+            Sometimes they meow you for foods, sometimes because they feel lonely. <br /><br />
+            But for your work or school, probably you may need to sleep earlier, <br/>
+            just in case your cat wakes you up, you still have enough energy for your day.
+            `
 },
 {
     id: 8,
