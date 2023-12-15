@@ -91,11 +91,16 @@ export const BEGINNERS = [{
 },
 {
     id: 8,
-    name: 'Under Construction',
+    name: 'Your parents',
     iconfolder: 'images/beginner_icons/',
-    img: 'caution.png',
+    img: 'mom.png',
     description: 
-            `Under Construction`
+            `Your parents may disagree on bringing a cat home at first. <br/><br/>
+            However, we have seen so many similar cases that a bit later your parents love your cat more than you,
+            just like your cat likes them more than you. <br /><br/>
+            Their relationship builds when you are at work, school, or whenever you are not at home. <br/><br/>
+            At that time, your cat has actually become their cat, and you are just the one who bring the cat to your parents...
+            `
 }
 
 
