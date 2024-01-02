@@ -124,16 +124,40 @@ Using AWS console is the easiest way to create a Graphql API, as Graphql schema,
 6. Click Add new field in Model information, and input below fields respectively:
 
 
-| Name | Type | Required |
-| ---  | ---  | --- |
-| name | String | No |
-| cname | String | No |
-| likes | Int | No |
+| Name | Type | Array |Required |
+| ---  | ---  | --- | --- |
+| name | String | No |Yes |
+| cname | String | No |No |
+| likes | Float | No |Yes |
+| description | String | No |Yes |
+| birth | String | No | Yes |
+| imgs | String | Yes | Yes |
+| imgFolder | String | No | Yes |
+| special | String | No | Yes |
+| thumbnail | String | No | Yes |
+| thumbs | String | Yes | Yes |
+| location | String | No | Yes |
+|
+
 
 ## Starting the application 
 
 ### Apollo Server
-If you use apollo server to handle Graphql queries from React, please edit `react/src/features/cats/catsSlice.js` file, uncomment line 5 to 38, and comment line 44 - 77. Otherwise, this step can be skipped.
+If you use apollo server to handle Graphql queries from React, please execute `ln` command to link `catsSliceAPOLLO.js` to `catsSlice.js`:
+
+```
+cd react/src/features/cats
+unlink catsSlice.js
+ln -s catsSliceAPOLLO.js catsSlice.js
+```
+
+Otherwise, under the same folder, link `catsSliceAWS.js` to `catsSlice.js` instead:
+
+```
+unlink catsSlice.js
+ln -s catsSliceAWS.js catsSlice.js
+```
+
 
 Now we can use start apollo server by `node` command:
 

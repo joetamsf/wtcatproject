@@ -11,8 +11,18 @@ const prisma = new PrismaClient();
 
 const typeDefs = `
     type Likes {
+        id: ID!
         name: String!
-        likes: Int! 
+        likes: Int!
+        cname: String
+        birth: String
+        description: String
+        thumbnail: String
+        imgFolder: String
+        imgs: [String]
+        special: String
+        thumbs: [String]
+        location: String
     }
 
     type Query {

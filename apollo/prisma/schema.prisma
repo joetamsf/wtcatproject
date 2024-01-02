@@ -11,4 +11,13 @@ model likescount {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   likes Float
   name  String
+  cname String
+  birth String
+  description String
+  thumbnail String
+  imgFolder String
+  imgs String[]
+  thumbs String[]
+  special String
+  location String
 }

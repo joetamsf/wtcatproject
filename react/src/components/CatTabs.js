@@ -53,22 +53,30 @@ const CatTabs = () => {
             cats.map(
                 (cat) => {
                 return (
-                    <Tab eventKey={cat.name} title={cat.name} key={cat.id}>
+                    <Tab eventKey={cat.name} title={cat.name} key={cat.name}>
                         <Row>
-                        <Col sm={1}  className='d-none d-sm-block'><img alt={cat.name} src={cat.thumbnail}/>
+                        <Col sm={1}  className='d-none d-sm-block'><img alt={cat.name} src={cat.thumbnail} key={cat.id}/>
                         </Col>
-                        <Col>
+                        <Col sm={9}>
                             <Row>
                                 <Col xs={10} sm={11}>
-                                    <div>
+                                    <div key={cat.name}>
                                         <p style={{textAlign: 'left'}}>{cat.name}
                                         <span> </span>
-                                         <FontAwesomeIcon icon={faHeart} /> {cat.like}</p>
+                                         <FontAwesomeIcon icon={faHeart} /> {cat.likes}</p>
                                     </div>                               
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={10}><p style={{textAlign: "left"}}>{cat.description}</p></Col>
+                                <Col xs={10}>
+                                    <pre style={{textAlign: "left",
+                                                whiteSpace: "pre-wrap",
+                                                overflowX: "auto",
+                                                font: "inherit"
+                                        }}
+                                        key={cat.name}
+                                        >{cat.description}</pre>
+                                </Col>
                             </Row>
                         </Col>
                         </Row>
