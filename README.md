@@ -1,6 +1,6 @@
 ## What the Cats! Project
 
-This is of repository of What the Cat! Project: https://wtc.shinjtprojs.dev/. The repository contains code for frontend and backend.
+This is of repository of What the Cat! Project. The repository contains code for frontend and backend.
 
 The frontend is written in React.js, whereas backend is an Apollo server that accepting GraphQL query and connecting MongoDB Atlas for data store. 
 
